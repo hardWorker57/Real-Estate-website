@@ -41,6 +41,19 @@ section {
   display: none;
 }
 
+.hamburger {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 4;
+  transition: 0.3s;
+  right: 20%;
+}
+
 @media screen and (max-width: 1405px) {
   .container {
     min-width: 95%;
@@ -79,19 +92,10 @@ section {
     height: 80%;
     width: 50%;
   }
+  .hamburger {
+    display: block;
+  }
 }
-.hamburger {
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background: #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  z-index: 4;
-  transition: 0.3s;
-  right: 20%;
-}
-
 .hamburger:before,
 .hamburger:after {
   content: "";
