@@ -1,5 +1,6 @@
-
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-size: 18px;
@@ -220,6 +221,7 @@ nav {
 .btn:hover {
     background: linear-gradient(85deg , #067fc5 , #7fb5d4);
     transform: translate(0px, -15px);
+    box-shadow: 60px -16px teal;
 }
 .header__bottom {
     display: flex;
@@ -257,6 +259,7 @@ nav {
     height: 130px;
     margin-left: 20%;
     color: $text-color;
+    flex-wrap: wrap;
     span {
         font-size: 2em;
         color: inherit;
@@ -349,4 +352,81 @@ nav {
 }
 .in__vector4 {
     left: 29px;
+}
+
+//meet__it
+.meet__it {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.article {
+    margin-top: 5rem;
+    padding-left: 130px;
+}
+.meet__image {
+    position: relative;
+}
+.article__bottom {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2.5em;
+    img {
+        margin-left: 0.8em;
+    }
+}
+.link {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.button {
+    background-color: #0A72AD;
+    color: $white-text;
+    padding: 20px 40px;
+    transition: all 0.75s ease;
+    cursor: pointer;
+}
+.button:hover {
+    background: linear-gradient(85deg , #067fc5 , #7fb5d4);
+    transform: translate(0px, -15px);
+    box-shadow: 60px -16px teal;
+}
+.meet__card__title {
+    font-size: 22px;
+    font-weight: 600;
+}
+.meet__card {
+    background: linear-gradient(120deg, #474747, #222222);  
+    color: $white-text;
+    width: 20em;
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: absolute;
+    top: 22%;
+    left: 70%;
+}
+
+//about__us 
+.about__us {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.about__us__image {
+    img {
+        margin-top: 2.5em;
+    }
+}
+
+//articles 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
 }
