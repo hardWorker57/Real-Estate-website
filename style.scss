@@ -430,3 +430,45 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
+//portfolio
+.section__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        margin-top: 5px;
+    }
+}
+.slider__img {
+    position: relative;
+}
+.slider__btn {
+    position: absolute;
+    top: 75%;
+    left: 0.6em;
+    padding: 0.5em;
+    background-color: #fff;
+    max-height: 4.9em;
+    width: 13em;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cube {
+    background-color: #0A72AD;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__title__custom {
+    font-weight: 600;
+    top: 10px;
+}
+.text__custom {
+    color: $text-color;
+    font-size: 0.7em;
+}
