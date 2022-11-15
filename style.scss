@@ -325,10 +325,16 @@ nav {
     left: 0;
     top: 0;
     bottom: 7px;
-
     display: block;
     margin: auto;
+    transition: all 0.7s ease-in;
 }
+.in__icon:hover {
+    rotate: 360deg;
+}
+// .in__icon:hover {
+//     animation: hvr-wobble-horizontal 1.5s 1;
+// }
 .in__icon1 {
     right: 167px;
 }
@@ -451,7 +457,6 @@ nav {
     background-color: #fff;
     max-height: 4.9em;
     width: 13em;
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -472,3 +477,40 @@ nav {
     color: $text-color;
     font-size: 0.7em;
 }
+.animate__me {
+    cursor: pointer;
+}
+.animate__me:hover {
+    animation: hvr-wobble-horizontal 1.5s 1;
+}
+@keyframes hvr-wobble-horizontal {
+    16.65% {
+      transform: translateX(8px);
+      transform: translateX(8px);
+    }
+  
+    33.3% {
+      transform: translateX(-4px);
+      transform: translateX(-4px);
+    }
+  
+    49.95% {
+      transform: translateX(4px);
+      transform: translateX(4px);
+    }
+  
+    66.6% {
+      transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+  
+    83.25% {
+      transform: translateX(1px);
+      transform: translateX(1px);
+    }
+  
+    100% {
+      transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
