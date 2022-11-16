@@ -37,6 +37,7 @@ header {
 .container {
     max-width: 80%;
     margin: auto;
+    box-sizing: border-box;
 }
 section {
     overflow: hidden;
@@ -77,6 +78,14 @@ section {
         border-bottom-left-radius: 60px;
         z-index: 2;
         transition: all ease 0.7s;
+        font-size: 16px;
+        padding: 1em 0.5em;
+    }
+    .back__header {
+        display: none;
+    }
+    body {
+        font-size: 11px;
     }
     #checkbox {
         display: block;
@@ -106,7 +115,11 @@ section {
         padding: 10px;
     }
 }
-
+@media screen and (max-width: 580px) {
+    body {
+        font-size: 9px;
+    }
+}
 .hamburger:before,
 .hamburger:after {
     content: "";
@@ -151,6 +164,10 @@ section {
     top: 0;
     transform: rotate(45deg);
     width: 30px;
+}
+.checkbox:checked ~ .hamburger, 
+    .toggle__menu {
+    position: fixed;
 }
 
 nav {
@@ -291,6 +308,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 5em 0;
+    flex-wrap: wrap;
 }
 .cards {
     display: flex;
@@ -305,6 +323,7 @@ nav {
 .section__title {
     font-size: 2.5em;
     font-weight: bold;
+
 }
 .card__title {
     font-size: 1.5em;
