@@ -84,9 +84,6 @@ section {
     .back__header {
         display: none;
     }
-    body {
-        font-size: 11px;
-    }
     #checkbox {
         display: block;
     }
@@ -115,9 +112,17 @@ section {
         padding: 10px;
     }
 }
+@media screen and (max-width: 776px) {
+    .meet__card {
+        margin-right: 23%;
+    }
+    body {
+        font-size: 11px;
+    }
+}
 @media screen and (max-width: 580px) {
     body {
-        font-size: 9px;
+        font-size: 10.5px;
     }
 }
 .hamburger:before,
@@ -255,11 +260,16 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+.info__midd {
+    padding: 0px 5px;
 }
 .info {
+    padding: 0px 3px;
     span {
         color: $text-color;
-        font-size: 1rem;
+        font-size: 1em;
         font-weight: normal;
     }
     p {
@@ -296,7 +306,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10em;
+    min-height: 10em;
+    flex-wrap: wrap;
 }
 
 //services
@@ -348,7 +359,8 @@ nav {
     margin: auto;
     transition: all 0.7s ease-in;
 }
-.in__icon:hover {
+.vector:hover {
+    scale: 1.2;
     rotate: 360deg;
 }
 // .in__icon:hover {
@@ -384,14 +396,13 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .article {
     margin-top: 5rem;
-    padding-left: 130px;
 }
 .meet__image {
     position: relative;
+    padding-right: 130px;
 }
 .article__bottom {
     display: flex;
@@ -405,6 +416,8 @@ nav {
 .link {
     font-size: 1.2em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 .button {
     background-color: #0A72AD;
@@ -419,7 +432,7 @@ nav {
     box-shadow: 60px -16px teal;
 }
 .meet__card__title {
-    font-size: 22px;
+    font-size: 1.2em;
     font-weight: 600;
 }
 .meet__card {
@@ -434,7 +447,9 @@ nav {
     font-size: 14px;
     position: absolute;
     top: 22%;
-    left: 70%;
+    right: 0%;
+    max-width: 60%;
+    font-size: inherit;
 }
 
 //about__us 
@@ -533,3 +548,12 @@ nav {
       transform: translateX(0);
     }
   }
+.image__common {
+    max-width: 100%;
+  }
+.image__fix {
+    display: block;
+}
+.remain__fontSize {
+    font-size: 18px;
+}
